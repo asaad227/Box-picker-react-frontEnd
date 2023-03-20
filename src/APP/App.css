@@ -17,6 +17,20 @@
   color: #61dafb;
 }
 
+.btn1,.btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9, .btn10, .btn11, .btn12, .btn13, .btn14, .btn15{
+  
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+ background-color: rgb(125, 132, 75);
+  cursor: pointer;
+}
 
 th{
   padding: 10px;
