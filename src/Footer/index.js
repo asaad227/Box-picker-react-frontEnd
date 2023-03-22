@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-    <div class="container">
+    <div className="container">
         <p>Copyright © 2023 BoxPickerKid.</p>
         <p>All rights reserved@a.saad227</p>
       <ul>

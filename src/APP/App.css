@@ -18,7 +18,7 @@ body{
 .App{
   display: flex;
   flex-wrap: wrap;
-  background-image: url();
+  /* background-image: url(); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Button from '../Button';
 import Fetch from '../Fetch';
 import Footer from '../Footer';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
     <Header/>
-  {/* <Fetch /> */}
+  <Fetch />
   <Button />
   <Footer/>
     </div>
