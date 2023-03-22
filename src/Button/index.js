@@ -27,7 +27,7 @@ export default function Button() {
     </div>
     <div className='boxes'>
     <button className='btn4' disabled={selectedButton === "btn4"} onClick={()=> handleClick("btn4")}>Pick Me</button>
-        <button className='btn5' disabled={selectedButton === "btn5"} onClick={()=> handleClick("btn4")}>Pick Me</button>
+        <button className='btn5' disabled={selectedButton === "btn5"} onClick={()=> handleClick("btn5")}>Pick Me</button>
         <button className='btn6' disabled={selectedButton === "btn6"} onClick={()=> handleClick("btn6")}>Pick Me</button>
       </div>
       <div className='boxes'>
