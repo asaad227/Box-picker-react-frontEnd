@@ -109,3 +109,54 @@ table {
 th {
   height: 20px;
 }
+
+
+footer {
+  /* color: #fff; */
+  padding: 20px;
+}
+
+.container {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.containerChange {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+}
+
+.container, .containerChange, p {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+
+.espeon{
+  display: flex;
+  justify-content: center;
+}
