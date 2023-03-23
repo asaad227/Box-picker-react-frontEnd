@@ -3,6 +3,7 @@ import React,{useState} from 'react'
 export default function Button() {
   const [score, setScore] = useState(0);
   const [buttonDisplay, setButtonDisplay] = useState([])
+  const [myBtn, setMybtn] = useState()
   function handleClick(btn){
     const randomM = Math.floor(Math.random() * 2);
     const randomT = Math.floor(Math.random() * 2);
