@@ -4,7 +4,7 @@ export function Button() {
   const [score, setScore] = useState(0);
 
   const [ isDisabled, setIsDisabled] = useState([]);
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(10)
 
   const buttonNames = []
   
@@ -13,7 +13,7 @@ export function Button() {
   }
 
   function handleClick(btn){
-    setCount(count + 1)
+    setCount(count - 1)
     const randomNum = Math.floor(Math.random() * 3);
     const randomBox = Math.floor(Math.random() * 3);
 
@@ -27,12 +27,13 @@ export function Button() {
   }
 
   function roundCount(btn){
-   if(count < 10){
+   if(count > 0){
     handleClick(btn)
    }
   }
   return (
     <div>
+    <h4>10 Round game to pick the right boxes.</h4>
     <h4>Score: {score}</h4>
     <h4>Round: {count}</h4>
     <div>
