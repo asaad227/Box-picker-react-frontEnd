@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import { Button } from '../Button';
 import Fetch from '../Fetch';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
     <Header/>
-  <Fetch />
+  {/* <Fetch /> */}
   <Button />
   <Footer/>
     </div>
