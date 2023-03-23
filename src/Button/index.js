@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 export function Button() {
   const [score, setScore] = useState(0);
+
   const [ isDisabled, setIsDisabled] = useState([]);
   const [count, setCount] = useState(0)
 
@@ -40,6 +41,7 @@ export function Button() {
         <button className="btn1" key={index} disabled={isDisabled.includes(name)} onClick={()=> roundCount(name)}>{name}</button>
       ))}
     </div>
+
     </div>
   );
 }
