@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Fetch from "../Fetch";
+
 
 export function Button() {
   const [score, setScore] = useState(0);
-
   const [ isDisabled, setIsDisabled] = useState([]);
   const [count, setCount] = useState(10)
 
@@ -31,18 +32,28 @@ export function Button() {
     handleClick(btn)
    }
   }
-  return (
-    <div>
-    <h4>10 Round game to pick the right boxes.</h4>
-    <h4>Score: {score}</h4>
-    <h4>Round: {count}</h4>
-    <div>
-      {buttonNames.map((name, index) => (
-        <button className="btn1" key={index} disabled={isDisabled.includes(name)} onClick={()=> roundCount(name)}>{name}</button>
-      ))}
-    </div>
+  
+function round(){
+    if(count === 0){
+      return(<div><Fetch/></div>)
+    }else{
+      return(<div>
+        <h4>10 Round game to pick the right boxes.</h4>
+        <h4>Score: {score}</h4>
+        <h4>Round: {count}</h4>
+        <div>
+          {buttonNames.map((name, index) => (
+            <button className="btn1" key={index} disabled={isDisabled.includes(name)} onClick={()=> roundCount(name)}>{name}</button>
+          ))}
+        </div>
+      
+        </div>)
+    }
+  }
 
-    </div>
+ 
+  return (
+    round()
   );
 }
 
