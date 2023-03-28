@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Fetch from "../Fetch";
 
+import Win from "../Audio/mixkit-ethereal-fairy-win-sound-2019.wav"
+import Espeon from "../Audio/mixkit-game-click-1114.wav"
+
 
 export function Button() {
   const [score, setScore] = useState(0);
@@ -20,10 +23,19 @@ export function Button() {
 
     const mySqr = [ ...isDisabled, btn];
     setIsDisabled(mySqr)
-
+   
+    const audio = new Audio(Espeon);
+    audio.play()
     if(randomBox === randomNum){
       setScore(score + 10)
-  
+     
+    }
+
+    
+
+    if(score > 40){
+      const audio = new Audio(Win)
+      audio.play()
     }
   }
 
